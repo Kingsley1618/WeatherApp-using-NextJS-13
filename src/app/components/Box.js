@@ -4,7 +4,7 @@ import Image from "next/image"
 import {weatherApi} from "@/utils/fetchUtils"
 
 async function Box({location}) {
-    const weather = await weatherApi(location.replace("%20"," "))
+    const weather = await weatherApi(location)
 
   return (
     <>
