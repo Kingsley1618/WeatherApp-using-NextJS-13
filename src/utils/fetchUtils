@@ -2,7 +2,7 @@ export async function weatherApi(location) {
     try {
       const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=6f3fb3be216b6504d1b69314090abcd6&units=metric`);
       
-      // Adding a delay using setTimeout (similar to your original code)
+     
       await new Promise((resolve) => setTimeout(resolve, 1000));
   
       return res.json();
